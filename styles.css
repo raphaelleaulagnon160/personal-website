@@ -1,0 +1,160 @@
+:root {
+  color-scheme: light;
+  --ink: #1a1a1a;
+  --muted: #5f6b73;
+  --accent: #2f4b7c;
+  --bg: #f7f7f4;
+  --surface: #ffffff;
+  --border: #e2e2dd;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Work Sans", "Helvetica Neue", sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.6;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 24px;
+  max-width: 960px;
+  margin: 40px auto 16px;
+  padding: 0 24px;
+}
+
+.site-title a {
+  font-family: "Source Serif 4", "Times New Roman", serif;
+  font-size: 1.6rem;
+  color: var(--ink);
+}
+
+.site-subtitle {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.site-nav {
+  display: flex;
+  gap: 18px;
+  font-size: 0.98rem;
+}
+
+.site-nav a {
+  color: var(--ink);
+}
+
+.site-nav .is-active {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 12px 24px 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.hero {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 28px;
+}
+
+.hero h1 {
+  font-family: "Source Serif 4", "Times New Roman", serif;
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 2rem;
+}
+
+.hero p {
+  margin: 0 0 12px;
+  color: var(--muted);
+}
+
+.content-block {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px 28px;
+}
+
+.content-block h2 {
+  font-family: "Source Serif 4", "Times New Roman", serif;
+  font-size: 1.4rem;
+  margin-top: 0;
+}
+
+.paper {
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.paper:last-child {
+  border-bottom: none;
+}
+
+.paper h3 {
+  margin: 0 0 6px;
+  font-size: 1.05rem;
+}
+
+.paper p {
+  margin: 0 0 6px;
+  color: var(--muted);
+}
+
+.paper__stage {
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.contact ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact li {
+  margin-bottom: 8px;
+}
+
+.site-footer {
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.9rem;
+  padding: 24px 16px 40px;
+}
+
+@media (max-width: 720px) {
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .site-nav {
+    flex-wrap: wrap;
+  }
+}
