@@ -560,6 +560,10 @@ a:hover {
   margin-bottom: 4px;
 }
 
+.contact__item a {
+  font-size: 0.95rem;
+}
+
 .site-footer {
   text-align: center;
   color: var(--muted);
