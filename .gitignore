@@ -1,0 +1,9 @@
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Local/temporary files
+INSTRUCTIONS.md
+examples/
+*.log

@@ -81,6 +81,13 @@ a:hover {
   gap: 32px;
 }
 
+@media (max-width: 640px) {
+  .page {
+    padding: 12px 16px 40px;
+    gap: 24px;
+  }
+}
+
 .hero {
   background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
   border: 1px solid var(--border);
@@ -89,6 +96,13 @@ a:hover {
   box-shadow: var(--shadow);
   position: relative;
   overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 32px 20px;
+    border-radius: 16px;
+  }
 }
 
 .delaunay-background {
@@ -147,6 +161,12 @@ a:hover {
   font-weight: 600;
   color: var(--ink);
   line-height: 1.2;
+}
+
+@media (max-width: 640px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
 }
 
 .hero__lead {
@@ -272,7 +292,7 @@ a:hover {
 @media (max-width: 768px) {
   .hero__content {
     grid-template-columns: 1fr;
-    gap: 32px;
+    gap: 24px;
     text-align: center;
   }
   
@@ -282,29 +302,51 @@ a:hover {
   
   .hero__image {
     justify-self: center;
+    max-width: 100%;
   }
   
-  .hero {
-    padding: 36px 28px;
+  .hero__lead {
+    font-size: 1rem;
   }
   
-  .hero h1 {
-    font-size: 2rem;
+  .hero__description {
+    max-width: 100%;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .hero__content {
+    gap: 16px;
   }
   
-  .paper__header {
-    flex-direction: column;
-    gap: 8px;
+  .hero__lead {
+    font-size: 0.95rem;
   }
   
-  .paper h3 {
-    font-size: 1.05rem;
+  .work-grid {
+    gap: 12px;
+    padding: 16px 0;
+    margin: 16px 0;
   }
   
-  .site-header {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  .work-label {
+    font-size: 0.8rem;
+    min-width: 90px;
+  }
+  
+  .work-content {
+    font-size: 0.9rem;
+  }
+  
+  .skills-tags {
+    gap: 6px;
+    justify-content: center;
+  }
+  
+  .skill-tag {
+    font-size: 0.78rem;
+    padding: 5px 10px;
   }
 }
 
@@ -319,6 +361,18 @@ a:hover {
   font-family: "Source Serif 4", "Times New Roman", serif;
   font-size: 1.4rem;
   margin-top: 0;
+}
+
+@media (max-width: 640px) {
+  .content-block {
+    border-radius: 12px;
+    padding: 16px 18px;
+  }
+  
+  .content-block h2 {
+    font-size: 1.2rem;
+    margin-bottom: 16px;
+  }
 }
 
 .paper {
@@ -351,11 +405,6 @@ a:hover {
   flex: 1;
 }
 
-.paper__icon {
-  font-size: 1.2rem;
-  flex-shrink: 0;
-}
-
 .paper__method {
   display: inline-flex;
   padding: 4px 12px;
@@ -369,6 +418,27 @@ a:hover {
   border: 1px solid rgba(47, 75, 124, 0.15);
 }
 
+@media (max-width: 640px) {
+  .paper__header {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .paper h3 {
+    font-size: 1rem;
+  }
+  
+  .paper__method {
+    white-space: normal;
+    display: inline-block;
+    font-size: 0.75rem;
+  }
+  
+  .paper__icon {
+    font-size: 1rem;
+  }
+}
+
 .paper__authors {
   margin: 0 0 12px;
   color: var(--muted);
@@ -379,6 +449,16 @@ a:hover {
   margin: 0 0 12px;
   color: var(--muted);
   line-height: 1.6;
+}
+
+@media (max-width: 640px) {
+  .paper__authors {
+    font-size: 0.9rem;
+  }
+  
+  .paper__description {
+    font-size: 0.93rem;
+  }
 }
 
 .paper__links {
@@ -406,6 +486,17 @@ a:hover {
   transform: translateY(-1px);
   box-shadow: 0 4px 12px rgba(47, 75, 124, 0.2);
   text-decoration: none;
+}
+
+@media (max-width: 640px) {
+  .paper__links {
+    gap: 8px;
+  }
+  
+  .paper__link {
+    padding: 5px 12px;
+    font-size: 0.85rem;
+  }
 }
 
 .paper__status {
@@ -498,13 +589,58 @@ a:hover {
   line-height: 1.6;
 }
 
+.iframe-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 141.4%; /* Approximate 16:9 ratio with space for PDF */
+  height: 0;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .iframe-container {
+    padding-bottom: 150%;
+  }
+}
+
 @media (max-width: 720px) {
   .site-header {
     flex-direction: column;
     align-items: flex-start;
+    margin: 24px auto 12px;
+    gap: 12px;
+  }
+  
+  .site-title a {
+    font-size: 1.3rem;
+  }
+  
+  .site-subtitle {
+    font-size: 0.9rem;
   }
 
   .site-nav {
     flex-wrap: wrap;
+    gap: 12px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-header {
+    padding: 0 12px;
+  }
+  
+  .site-title a {
+    font-size: 1.1rem;
   }
 }
