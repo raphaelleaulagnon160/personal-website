@@ -31,40 +31,96 @@
 
     <main class="page">
       <section class="hero">
-        <h1>Welcome</h1>
-        <p>
-          I am a PhD candidate in Economics at
-          <a href="https://www.unibocconi.eu/">Bocconi University</a> and an
-          affiliate at
-          <a href="https://twitter.com/cdf_innovlab?lang=fr">College de France</a>.
-        </p>
-        <p>
-          My research interests lie in labor economics and development economics,
-          with a focus on education and inequalities.
-        </p>
+        <canvas id="delaunay-canvas" class="delaunay-background"></canvas>
+        <div class="hero__content">
+          <div class="hero__text">
+            <div class="hero__badge">PhD Candidate | Applied Economist</div>
+            <h1>Raphaelle Aulagnon</h1>
+            <p class="hero__lead">
+              I'm a PhD candidate in Economics at
+              <a href="https://www.unibocconi.eu/" target="_blank" rel="noopener">Bocconi University</a>, specializing in 
+              designing and evaluating <strong>technology-driven interventions</strong> in education and 
+              labor markets.
+            </p>
+            <p class="hero__description">
+              My work combines <strong>causal inference</strong>, <strong>experimental methods</strong>, 
+              <strong>discrete-choice models</strong>, and <strong>machine learning</strong>. 
+              I use <strong>Python and R</strong> to analyze large-scale field experiments and 
+              administrative data.
+            </p>
+            
+            <div class="work-grid">
+              <div class="work-item">
+                <div class="work-label">💼 Current</div>
+                <div class="work-content">
+                  Consulting with <strong><a href="https://www.worldbank.org/" target="_blank" rel="noopener">World Bank</a></strong> on AI and labor markets<br>
+                  Field research on educational technology with <strong><a href="https://www.grade.org.pe/" target="_blank" rel="noopener">GRADE Peru</a></strong> and 
+                  <strong><a href="https://www.iadb.org/" target="_blank" rel="noopener">IDB</a></strong>
+                </div>
+              </div>
+              
+              <div class="work-item">
+                <div class="work-label">🔗 Affiliated</div>
+                <div class="work-content">
+                  <a href="https://www.insead.edu/faculty-personal-site/philippe-aghion/economics-of-innovation-lab" target="_blank" rel="noopener">Economics of Innovation Lab</a> • 
+                  <a href="https://leap.unibocconi.eu/" target="_blank" rel="noopener">LEAP Bocconi</a>
+                </div>
+              </div>
+              
+              <div class="work-item">
+                <div class="work-label">📚 Previously</div>
+                <div class="work-content">
+                  Visiting Research Fellow at <strong><a href="https://www.hks.harvard.edu/centers/cid" target="_blank" rel="noopener">Harvard CID</a></strong> (2024)<br>
+                  Visiting Research Fellow at <strong><a href="https://voltagera.org/who-we-are" target="_blank" rel="noopener">UChicago John List team</a></strong> (2025)<br>
+                  Research Assistant to <strong><a href="https://www.philippeaghion.com/" target="_blank" rel="noopener">Philippe Aghion</a></strong> (2020)<br>
+                  Research Associate at <strong><a href="https://www.goodbusinesslab.org/" target="_blank" rel="noopener">Good Business Lab</a></strong> (2019)
+                </div>
+              </div>
+            </div>
+            
+            <div class="skills-tags">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">R</span>
+              <span class="skill-tag">Machine Learning</span>
+              <span class="skill-tag">Causal Inference</span>
+              <span class="skill-tag">Field Experiments</span>
+            </div>
+          </div>
+          <div class="hero__image">
+            <img src="profile.jpg" alt="Raphaelle Aulagnon" class="profile-photo">
+          </div>
+        </div>
       </section>
 
-      <section class="contact">
-        <h2>Contact</h2>
-        <ul>
-          <li>
-            Email:
-            <a href="mailto:raphaelle.aulagnon@phd.unibocconi.it"
-              >raphaelle.aulagnon@phd.unibocconi.it</a
-            >
-          </li>
-          <li>
-            LinkedIn:
-            <a href="https://www.linkedin.com/in/raphaelle-aulagnon/"
-              >linkedin.com/in/raphaelle-aulagnon</a
-            >
-          </li>
-        </ul>
+      <section class="content-block contact">
+        <h2>Get in Touch</h2>
+        <div class="contact__grid">
+          <div class="contact__item">
+            <span class="contact__icon">📧</span>
+            <div>
+              <div class="contact__label">Email</div>
+              <a href="mailto:raphaelle.aulagnon@phd.unibocconi.it"
+                >raphaelle.aulagnon@phd.unibocconi.it</a
+              >
+            </div>
+          </div>
+          <div class="contact__item">
+            <span class="contact__icon">💼</span>
+            <div>
+              <div class="contact__label">LinkedIn</div>
+              <a href="https://www.linkedin.com/in/raphaelle-aulagnon/" target="_blank" rel="noopener"
+                >linkedin.com/in/raphaelle-aulagnon</a
+              >
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>Last updated: 2025</p>
+      <p>Last updated: February 2026</p>
     </footer>
+    
+    <script src="delaunay.js"></script>
   </body>
 </html>

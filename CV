@@ -1,0 +1,142 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+% ModernCV themes
+\moderncvstyle{banking}     % Style: 'casual', 'classic', 'banking', 'oldstyle'
+\moderncvcolor{blue}        % Color options: 'blue', 'orange', 'green', 'red', 'purple', 'grey', 'black'
+
+% Custom color scheme matching website
+\usepackage{xcolor}
+\definecolor{inkcolor}{RGB}{26,26,26}       % --ink: #1a1a1a
+\definecolor{accentcolor}{RGB}{47,75,124}   % --accent: #2f4b7c
+\definecolor{highlightcolor}{RGB}{214,90,49} % --highlight: #d65a31
+\definecolor{mutedcolor}{RGB}{95,107,115}   % --muted: #5f6b73
+\definecolor{bgcolor}{RGB}{247,247,244}     % --bg: #f7f7f4
+
+% Override moderncv colors
+\colorlet{cvtitlefont}{inkcolor}
+\colorlet{titlecolor}{accentcolor}
+\colorlet{textcolor}{inkcolor}
+\colorlet{accentcolor}{accentcolor}
+
+\usepackage[colorlinks=true, urlcolor=accentcolor, linkcolor=accentcolor]{hyperref}
+
+% Modern fonts similar to website
+\usepackage[sfdefault]{noto}  % Clean sans-serif (similar to Work Sans)
+\renewcommand*{\titlefont}{\fontsize{28}{32}\mdseries\upshape} % Title font
+
+% Adjust margins
+\usepackage[scale=0.88]{geometry}
+
+% Personal data
+\firstname{Raphaelle}
+\familyname{Aulagnon}
+\email{raphaelle.aulagnon@phd.unibocconi.it}
+\phone[mobile]{+33 6 33 63 92 06}
+\extrainfo{\href{https://raphaelleaulagnon160.github.io/personal-website}{Personal Website}}
+
+\begin{document}
+\makecvtitle
+
+%----------------------------------------------------------------------------------------
+%   RESEARCH INTERESTS
+%----------------------------------------------------------------------------------------
+\section*{Research Summary}
+I am a PhD candidate in Economics at Bocconi University, specializing in designing and evaluating technology-driven interventions in education and labor markets. My work combines causal inference, experimental methods, discrete-choice models, and machine learning. I use Python and R to analyze large-scale field experiments and administrative data.
+
+%----------------------------------------------------------------------------------------
+%   EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+\cventry{2021--Jan 2027}{PhD in Economics}{\href{https://www.unibocconi.eu/}{Bocconi University}}{Italy}{}{Visiting Fellow at \href{https://www.hks.harvard.edu/centers/cid}{Harvard CID} (2024) and within \href{https://voltagera.org/who-we-are}{UChicago John List team} (2025). \\ Focus: education, digital and labor economics.}
+\cventry{2019}{MA in International and Development Economics}{\href{https://www.yale.edu/}{Yale University}}{USA}{}{}
+\cventry{2014--2018}{MSc in Management}{\href{https://www.essec.edu/}{ESSEC Business School}}{France \& Singapore}{}{Exchange at \href{https://www.utdt.edu/}{Universidad Torcuato Di Tella} (2017). \\ Focus: math and economics tracks.}
+\cventry{2012--2014}{Undergraduate Studies in Mathematics and Geopolitics}{Lycée Janson de Sailly}{France}{}{}
+
+%----------------------------------------------------------------------------------------
+%   EXPERIENCE
+%----------------------------------------------------------------------------------------
+\section{Experience}
+
+\cventry{Sept 2025--May 2026}{External Consultant}{\href{https://www.worldbank.org/}{World Bank} Outcomes Department}{Remote}{}{
+\begin{itemize}
+\item Conducting a meta-analysis on “AI for Good Jobs,” synthesizing evidence on how AI adoption affects job search, matching, and labor market outcomes.
+\end{itemize}}
+
+\cventry{Dec 2024--March 2025}{External Consultant}{\href{https://www.iadb.org/en/knowledge-resources/research-idb}{IDB Research Department}}{Remote}{}{
+\begin{itemize}
+\item Worked on multiple Digital Education projects in Peru, spanning field implementation and econometric analysis.
+\end{itemize}}
+
+
+\cventry{Sep. 2020-- July 2021}{Research Assistant to \href{https://www.philippeaghion.com/}{Philippe Aghion}}{\href{https://www.insead.edu/faculty-personal-site/philippe-aghion/economics-of-innovation-lab}{Economics of Innovation Lab}, \href{https://www.college-de-france.fr/}{Collège de France}}{France}{}{
+\begin{itemize}
+\item Analyzed fiscal and survey data to assess inequality and mobility in France.
+\item Produced evidence to inform public policy discussions.
+\end{itemize}}
+
+\cventry{July 2019-- July 2020}{Research Associate}{\href{https://goodbusinesslab.org/}{Good Business Lab}}{India}{}{
+\begin{itemize}
+\item Designed and implemented RCTs on labor market programs with a major garment firm.
+\item Generated policy-relevant evidence on worker financial inclusion, well-being, and productivity, \\ engaging with private sector and NGOs.
+\end{itemize}}
+
+%----------------------------------------------------------------------------------------
+%   AFFILIATIONS
+%----------------------------------------------------------------------------------------
+\section{Affiliations}
+\cvitem{}{\href{https://www.insead.edu/faculty-personal-site/philippe-aghion/economics-of-innovation-lab}{Economics of Innovation Lab}, \href{https://leap.unibocconi.eu/}{LEAP Bocconi}}
+
+
+%----------------------------------------------------------------------------------------
+%   SKILLS
+%----------------------------------------------------------------------------------------
+\section{Languages and Skills}
+\cvitem{Languages}{Native French; Fluent in English, Spanish, Italian; Intermediate German.}
+\cvitem{Programming}{Python and R for statistical analysis and modeling.}
+\cvitem{Methods}{RCTs, discrete-choice modeling, causal inference, causal ML, heterogeneous treatment effects, Bayesian modeling, survey experiments.}
+\cvitem{Tools}{Stata, LaTeX, GitHub, Jupyter, SurveyCTO.}
+
+%----------------------------------------------------------------------------------------
+%   TEACHING
+%----------------------------------------------------------------------------------------
+\section{Teaching}
+\cventry{Sept 2022--Present}{Teaching Assistant in Econometrics}{\href{https://www.unibocconi.eu/}{Bocconi University}}{Milan, Italy}{}{Bachelor level}
+\cventry{Jan. 2021--July 2021}{Teaching Assistant in Public Policy}{\href{https://www.sciencespo.fr/}{Sciences Po Paris}}{Paris, France}{}{Master level}
+\cventry{Jan. 2021--July 2021}{Lecturer in Statistics}{\href{https://www.sciencespo.fr/}{Sciences Po Paris}}{Paris, France}{}{Bachelor level}
+
+%----------------------------------------------------------------------------------------
+%   GRANTS & FELLOWSHIPS
+%----------------------------------------------------------------------------------------
+\section{Grants and Fellowships}
+\cvitem{}{J-PAL ESII Research Grant, LEAP Student Grant, EoF Academy Research Grant, Unicredit Fellowship.}
+
+%----------------------------------------------------------------------------------------
+%   OTHER ROLES
+%----------------------------------------------------------------------------------------
+\section{Older Positions}
+\cventry{Jan. 2018 -- June 2018 }{Asset and Liabilities Analyst}{\href{https://www.edf.fr/}{EDF}}{France}{}{
+\begin{itemize}
+\item Built financial risk models to advise portfolio strategy for a leading European utility.
+\end{itemize}}
+
+\cventry{Sep. 2016 -- Feb. 2017}{Credit Analyst}{\href{https://www.triodos.com/}{Triodos Finance}}{France}{}{
+\begin{itemize}
+\item Evaluated investment projects for financial, social, and environmental impact.
+\end{itemize}}
+
+\cventry{June. 2015 -- Dec. 2015}{Financial and Macroeconomic Analyst}{Alcatel-Lucent España}{Spain}{}{
+\begin{itemize}
+\item Conducted macroeconomic and financial analysis to support telecom strategy in Southern Europe.
+\end{itemize}}
+
+%------------------------------------------------------------------
+%   References
+%------------------------------------------------------------------
+
+\section*{References}
+
+\href{https://sites.google.com/site/jeromeadda/}{Jerome Adda}: Bocconi University \href{mailto:jerome.adda@unibocconi.it}{jerome.adda@unibocconi.it} \\
+\href{https://www.philippeaghion.com/}{Philippe Aghion}: INSEAD \href{mailto:philippe.aghion@insead.edu}{philippe.aghion@insead.edu} \\
+\href{https://www.iadb.org/en/research-and-data/julian-cristia}{Julian Cristia}: IDB \href{mailto:jcristia@iadb.org}{jcristia@iadb.org}
+
+\end{document}
